@@ -36,5 +36,10 @@ namespace PansionApplication
         {
             new FrmRooms().Show();
         }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            new MüsteriBilgileri().Show();
+        }
     }
 }

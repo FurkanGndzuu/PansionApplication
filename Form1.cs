@@ -17,6 +17,16 @@ namespace PansionApplication
             InitializeComponent();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "smashLesh" && txtPassword.Text == "Furkan+2003+")
+            {
+                new MainForm().Show();
+            }
+            else
+            {
+                MessageBox.Show("User Name or Password incorrect");
+            }
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.BtnRooms = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCustomers = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,11 +70,21 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(227, 196);
+            this.pictureBox1.Location = new System.Drawing.Point(357, 212);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(202, 205);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnCustomers
+            // 
+            this.btnCustomers.Location = new System.Drawing.Point(756, 39);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(141, 114);
+            this.btnCustomers.TabIndex = 4;
+            this.btnCustomers.Text = "Customer Information Show";
+            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // MainForm
             // 
@@ -81,13 +92,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(704, 486);
+            this.ClientSize = new System.Drawing.Size(909, 486);
+            this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnRooms);
             this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.btnAdminLogin);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Button btnAddCustomer;
         private System.Windows.Forms.Button BtnRooms;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCustomers;
     }
 }

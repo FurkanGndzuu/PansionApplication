@@ -171,5 +171,10 @@ namespace PansionApplication
 
             MessageBox.Show("Customer Added");
         }
+
+        private void FrmYeniMüsteriEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
