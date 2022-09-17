@@ -36,7 +36,7 @@
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnEmployeeSalary = new System.Windows.Forms.Button();
             this.btnStocks = new System.Windows.Forms.Button();
-            this.btnCustomerMesages = new System.Windows.Forms.Button();
+            this.btnCustomerMessages = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,14 +108,15 @@
             this.btnStocks.Text = "Stocks";
             this.btnStocks.UseVisualStyleBackColor = true;
             // 
-            // btnCustomerMesages
+            // btnCustomerMessages
             // 
-            this.btnCustomerMesages.Location = new System.Drawing.Point(513, 225);
-            this.btnCustomerMesages.Name = "btnCustomerMesages";
-            this.btnCustomerMesages.Size = new System.Drawing.Size(141, 114);
-            this.btnCustomerMesages.TabIndex = 7;
-            this.btnCustomerMesages.Text = "Customer Messages";
-            this.btnCustomerMesages.UseVisualStyleBackColor = true;
+            this.btnCustomerMessages.Location = new System.Drawing.Point(513, 225);
+            this.btnCustomerMessages.Name = "btnCustomerMessages";
+            this.btnCustomerMessages.Size = new System.Drawing.Size(141, 114);
+            this.btnCustomerMessages.TabIndex = 7;
+            this.btnCustomerMessages.Text = "Admin Register";
+            this.btnCustomerMessages.UseVisualStyleBackColor = true;
+            this.btnCustomerMessages.Click += new System.EventHandler(this.btnCustomerMesages_Click);
             // 
             // btnAbout
             // 
@@ -135,7 +136,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(909, 700);
             this.Controls.Add(this.btnAbout);
-            this.Controls.Add(this.btnCustomerMesages);
+            this.Controls.Add(this.btnCustomerMessages);
             this.Controls.Add(this.btnStocks);
             this.Controls.Add(this.btnEmployeeSalary);
             this.Controls.Add(this.btnCustomers);
@@ -164,7 +165,7 @@
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnEmployeeSalary;
         private System.Windows.Forms.Button btnStocks;
-        private System.Windows.Forms.Button btnCustomerMesages;
+        private System.Windows.Forms.Button btnCustomerMessages;
         private System.Windows.Forms.Button btnAbout;
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace PansionApplication
 {
@@ -16,6 +18,7 @@ namespace PansionApplication
         {
             InitializeComponent();
         }
+
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -45,6 +48,11 @@ namespace PansionApplication
         private void btnAbout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("We created the company in 2022 will expand...");
+        }
+
+        private void btnCustomerMesages_Click(object sender, EventArgs e)
+        {
+            new AdminPanelKayit().Show();   
         }
     }
 }
