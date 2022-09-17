@@ -297,9 +297,10 @@
             this.Controls.Add(this.btn102);
             this.Controls.Add(this.btn101);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmRooms";
             this.Text = "FrmRooms";
+            this.Load += new System.EventHandler(this.FrmRooms_Load);
             this.ResumeLayout(false);
 
         }

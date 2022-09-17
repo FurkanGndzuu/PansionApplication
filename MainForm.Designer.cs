@@ -34,6 +34,10 @@
             this.BtnRooms = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnEmployeeSalary = new System.Windows.Forms.Button();
+            this.btnStocks = new System.Windows.Forms.Button();
+            this.btnCustomerMesages = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +74,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(357, 212);
+            this.pictureBox1.Location = new System.Drawing.Point(353, 472);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(202, 205);
             this.pictureBox1.TabIndex = 3;
@@ -86,13 +90,54 @@
             this.btnCustomers.UseVisualStyleBackColor = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
+            // btnEmployeeSalary
+            // 
+            this.btnEmployeeSalary.Location = new System.Drawing.Point(41, 225);
+            this.btnEmployeeSalary.Name = "btnEmployeeSalary";
+            this.btnEmployeeSalary.Size = new System.Drawing.Size(141, 114);
+            this.btnEmployeeSalary.TabIndex = 5;
+            this.btnEmployeeSalary.Text = "Employee Salary";
+            this.btnEmployeeSalary.UseVisualStyleBackColor = true;
+            // 
+            // btnStocks
+            // 
+            this.btnStocks.Location = new System.Drawing.Point(268, 225);
+            this.btnStocks.Name = "btnStocks";
+            this.btnStocks.Size = new System.Drawing.Size(141, 114);
+            this.btnStocks.TabIndex = 6;
+            this.btnStocks.Text = "Stocks";
+            this.btnStocks.UseVisualStyleBackColor = true;
+            // 
+            // btnCustomerMesages
+            // 
+            this.btnCustomerMesages.Location = new System.Drawing.Point(513, 225);
+            this.btnCustomerMesages.Name = "btnCustomerMesages";
+            this.btnCustomerMesages.Size = new System.Drawing.Size(141, 114);
+            this.btnCustomerMesages.TabIndex = 7;
+            this.btnCustomerMesages.Text = "Customer Messages";
+            this.btnCustomerMesages.UseVisualStyleBackColor = true;
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Location = new System.Drawing.Point(756, 225);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(141, 114);
+            this.btnAbout.TabIndex = 8;
+            this.btnAbout.Text = "About";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(909, 486);
+            this.ClientSize = new System.Drawing.Size(909, 700);
+            this.Controls.Add(this.btnAbout);
+            this.Controls.Add(this.btnCustomerMesages);
+            this.Controls.Add(this.btnStocks);
+            this.Controls.Add(this.btnEmployeeSalary);
             this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnRooms);
@@ -117,5 +162,9 @@
         private System.Windows.Forms.Button BtnRooms;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnEmployeeSalary;
+        private System.Windows.Forms.Button btnStocks;
+        private System.Windows.Forms.Button btnCustomerMesages;
+        private System.Windows.Forms.Button btnAbout;
     }
 }

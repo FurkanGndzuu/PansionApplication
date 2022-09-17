@@ -41,5 +41,10 @@ namespace PansionApplication
         {
             new MüsteriBilgileri().Show();
         }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("We created the company in 2022 will expand...");
+        }
     }
 }

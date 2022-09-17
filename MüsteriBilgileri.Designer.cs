@@ -64,6 +64,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnLeaveRoom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -90,7 +91,7 @@
             this.columnHeader9,
             this.columnHeader10});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 419);
+            this.listView1.Location = new System.Drawing.Point(12, 457);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1273, 259);
             this.listView1.TabIndex = 1;
@@ -159,12 +160,13 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1048, 271);
+            this.btnSearch.Location = new System.Drawing.Point(1048, 329);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(237, 52);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnDelete
             // 
@@ -351,7 +353,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(987, 339);
+            this.textBox1.Location = new System.Drawing.Point(987, 387);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(298, 34);
             this.textBox1.TabIndex = 55;
@@ -361,7 +363,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(815, 346);
+            this.label10.Location = new System.Drawing.Point(818, 390);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(152, 27);
@@ -378,12 +380,23 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnLeaveRoom
+            // 
+            this.btnLeaveRoom.Location = new System.Drawing.Point(1048, 271);
+            this.btnLeaveRoom.Name = "btnLeaveRoom";
+            this.btnLeaveRoom.Size = new System.Drawing.Size(237, 52);
+            this.btnLeaveRoom.TabIndex = 58;
+            this.btnLeaveRoom.Text = "LeaveRoom";
+            this.btnLeaveRoom.UseVisualStyleBackColor = true;
+            this.btnLeaveRoom.Click += new System.EventHandler(this.btnLeaveRoom_Click);
+            // 
             // MüsteriBilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1297, 690);
+            this.ClientSize = new System.Drawing.Size(1297, 731);
+            this.Controls.Add(this.btnLeaveRoom);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1);
@@ -457,5 +470,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnLeaveRoom;
     }
 }

@@ -103,5 +103,181 @@ namespace PansionApplication
             Connection.Close();
             Veriler();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+            listView1.Items.Clear();
+            Connection.Open();
+            SqlCommand command = new SqlCommand("select *from Tbl_AddCustomer where CustomerName like '%"+textBox1.Text+"%'", Connection);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                ListViewItem add = new ListViewItem();
+
+
+                add.Text = reader["CustomerId"].ToString();
+                add.SubItems.Add(reader["CustomerName"].ToString());
+                add.SubItems.Add(reader["CustomerSurname"].ToString());
+                add.SubItems.Add(reader["CustomerPhone"].ToString());
+                add.SubItems.Add(reader["CustomerEmail"].ToString());
+                add.SubItems.Add(reader["CustomerTc"].ToString());
+                add.SubItems.Add(reader["CustomerRoomNo"].ToString());
+                add.SubItems.Add(reader["CustomerRoomPrice"].ToString());
+                add.SubItems.Add(reader["CustomerLoginHistory"].ToString());
+                add.SubItems.Add(reader["CustomerExitHistory"].ToString());
+
+                listView1.Items.Add(add);
+
+            }
+
+            Connection.Close();
+        }
+
+        private void btnLeaveRoom_Click(object sender, EventArgs e)
+        {
+            if (txtRoomNo.Text == "101")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda101",Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "102")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda102", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "103")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda103", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "104")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda104", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "105")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda105", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "106")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda106", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "107")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda107", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "108")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda108", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "109")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda109", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "110")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda110", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "111")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda111", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "112")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda112", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "113")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda113", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "114")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda114", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "115")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda115", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "116")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda116", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "117")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda117", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "118")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda118", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "119")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda119", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+            if (txtRoomNo.Text == "120")
+            {
+                Connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Oda120", Connection);
+                cmd.ExecuteNonQuery();
+                Connection.Close();
+            }
+        }
     }
 }
