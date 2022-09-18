@@ -34,7 +34,6 @@
             this.BtnRooms = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomers = new System.Windows.Forms.Button();
-            this.btnEmployeeSalary = new System.Windows.Forms.Button();
             this.btnStocks = new System.Windows.Forms.Button();
             this.btnCustomerMessages = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
@@ -74,7 +73,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(353, 472);
+            this.pictureBox1.Location = new System.Drawing.Point(365, 381);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(202, 205);
             this.pictureBox1.TabIndex = 3;
@@ -90,18 +89,9 @@
             this.btnCustomers.UseVisualStyleBackColor = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
-            // btnEmployeeSalary
-            // 
-            this.btnEmployeeSalary.Location = new System.Drawing.Point(41, 225);
-            this.btnEmployeeSalary.Name = "btnEmployeeSalary";
-            this.btnEmployeeSalary.Size = new System.Drawing.Size(141, 114);
-            this.btnEmployeeSalary.TabIndex = 5;
-            this.btnEmployeeSalary.Text = "Employee Salary";
-            this.btnEmployeeSalary.UseVisualStyleBackColor = true;
-            // 
             // btnStocks
             // 
-            this.btnStocks.Location = new System.Drawing.Point(268, 225);
+            this.btnStocks.Location = new System.Drawing.Point(161, 216);
             this.btnStocks.Name = "btnStocks";
             this.btnStocks.Size = new System.Drawing.Size(141, 114);
             this.btnStocks.TabIndex = 6;
@@ -111,7 +101,7 @@
             // 
             // btnCustomerMessages
             // 
-            this.btnCustomerMessages.Location = new System.Drawing.Point(513, 225);
+            this.btnCustomerMessages.Location = new System.Drawing.Point(395, 216);
             this.btnCustomerMessages.Name = "btnCustomerMessages";
             this.btnCustomerMessages.Size = new System.Drawing.Size(141, 114);
             this.btnCustomerMessages.TabIndex = 7;
@@ -121,7 +111,7 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(756, 225);
+            this.btnAbout.Location = new System.Drawing.Point(633, 203);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(141, 114);
             this.btnAbout.TabIndex = 8;
@@ -135,11 +125,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(909, 700);
+            this.ClientSize = new System.Drawing.Size(909, 631);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnCustomerMessages);
             this.Controls.Add(this.btnStocks);
-            this.Controls.Add(this.btnEmployeeSalary);
             this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnRooms);
@@ -164,7 +153,6 @@
         private System.Windows.Forms.Button BtnRooms;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCustomers;
-        private System.Windows.Forms.Button btnEmployeeSalary;
         private System.Windows.Forms.Button btnStocks;
         private System.Windows.Forms.Button btnCustomerMessages;
         private System.Windows.Forms.Button btnAbout;
