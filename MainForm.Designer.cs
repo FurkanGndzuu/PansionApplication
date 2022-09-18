@@ -105,8 +105,9 @@
             this.btnStocks.Name = "btnStocks";
             this.btnStocks.Size = new System.Drawing.Size(141, 114);
             this.btnStocks.TabIndex = 6;
-            this.btnStocks.Text = "Stocks";
+            this.btnStocks.Text = "Stocks Price";
             this.btnStocks.UseVisualStyleBackColor = true;
+            this.btnStocks.Click += new System.EventHandler(this.btnStocks_Click);
             // 
             // btnCustomerMessages
             // 

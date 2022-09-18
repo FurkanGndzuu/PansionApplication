@@ -54,5 +54,10 @@ namespace PansionApplication
         {
             new AdminPanelKayit().Show();   
         }
+
+        private void btnStocks_Click(object sender, EventArgs e)
+        {
+            new StocksPrice().Show();
+        }
     }
 }
